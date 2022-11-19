@@ -15,7 +15,7 @@ import { UserService } from './user.service';
 @Controller('users')
 export class UserController {
   constructor(private userService: UserService) {}
-  @Get('me')
+  @Get('list')
   getMe(@GetUser() user: User) {
     return user;
   }
